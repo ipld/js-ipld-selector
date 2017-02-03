@@ -1,0 +1,21 @@
+{
+  "name": "js-ipld-selector",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicola Greco <me@nicola.io> (http://nicolagreco.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "chai": "^3.5.0",
+    "ipfs": "^0.21.8",
+    "ipld-dag-cbor": "^0.9.0",
+    "ipld-dag-pb": "^0.9.4",
+    "ipld-resolver": "^0.6.0",
+    "pull-stream": "^3.5.0",
+    "regex": "^0.1.1"
+  }
+}
