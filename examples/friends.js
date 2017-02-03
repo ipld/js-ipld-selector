@@ -1,4 +1,4 @@
-const IPLDSelector = require('./')
+const IPLDSelector = require('../src')
 const IPLDResolver = require('ipld-resolver')
 const series = require('async/series')
 const dagCBOR = require('ipld-dag-cbor')
