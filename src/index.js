@@ -36,6 +36,7 @@ module.exports = class IPLDSelector {
           list.push(join(path, key))
         })
 
+
       const exploreCallbacks = keys
         .filter(key => {
           return typeof node[key] === 'object' || node[key] === '/'

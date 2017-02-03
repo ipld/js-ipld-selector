@@ -38,10 +38,10 @@ series([
   },
   (cb) => {
     nicola = {
-      friends: [{
-        '/' : davidCID.toBaseEncodedString(),
-        '/' : jeremyCID.toBaseEncodedString()
-      }]
+      friends: [
+        {'/' : davidCID.toBaseEncodedString()},
+        {'/' : jeremyCID.toBaseEncodedString()}
+      ]
     }
     dagCBOR.util.cid(nicola, (err, cid) => {
       nicolaCID = cid
