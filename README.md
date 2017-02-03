@@ -10,14 +10,34 @@ This selector actually implements multiple `strategies`:
 
 See the [examples](https://github.com/nicola/js-ipld-selector/tree/master/examples) for better introduction
 
-### `.which`
+### .which(strategy, cid, selector, callback)
 
 Which returns which subsets of the graphs have been matched.
 
 ```
-.which(strategy, cid, selector, callback)
-//[ 'friends', 'friends/0', 'friends/0/name' ]
+Qml1..
+{ name: "Jeremy", nick: "whyrusleeping"}
+
+Qml2
+{ name: "Juan", nick: "jdag"}
+
+Qml3
+{
+  name: "Nicola",
+  friends: [
+    {'/': "Qml1.."},
+    {'/': "Qml2.."}
+  ]
+}
 ```
 
 ```
+.which('regex', cid3, '.*/name', callback)
+//[ 'friends/0/name', 'friends/1/name' ]
+.which('glob', cid3, '**/name', callback)
+//[ 'friends/0/name', 'friends/1/name' ]
 ```
+
+## License
+
+MIT
