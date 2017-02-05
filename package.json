@@ -11,6 +11,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "chai": "^3.5.0",
+    "glob-base": "^0.3.0",
     "ipfs": "^0.21.8",
     "ipld-dag-cbor": "^0.9.0",
     "ipld-dag-pb": "^0.9.4",

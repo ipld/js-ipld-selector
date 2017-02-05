@@ -11,11 +11,7 @@ module.exports = class IPLDSelector {
   }
 
   tree (cid, path, callback) {
-    if (path === '') {
-      this.resolver.get(cid, callback)
-    } else {
       this.resolver.resolve(cid, path, callback)
-    }
   }
 
   // TODO: note cid might be a path in first place!
