@@ -81,11 +81,17 @@ describe('IPLD Selectors', () => {
 
   describe('.which', () => {
     describe('strategy: glob', () => {
+      // Default tests
       whichTests('glob')
+
+      // glob specific tests
     })
 
     describe('strategy: regex (expensive)', () => {
+      // Default tests
       whichTests('regex')
+
+      // Regex specific tests
     })
   })
 })
