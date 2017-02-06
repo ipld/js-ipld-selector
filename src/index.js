@@ -1,9 +1,6 @@
 const minimatch = require('minimatch')
-
 const join = require('path').join
-const series = require('async').series
 const parallel = require('async').parallel
-const Regex = require('regex')
 
 module.exports = class IPLDSelector {
   constructor (ipldResolver) {
@@ -11,7 +8,7 @@ module.exports = class IPLDSelector {
   }
 
   tree (cid, path, callback) {
-      this.resolver.resolve(cid, path, callback)
+    this.resolver.resolve(cid, path, callback)
   }
 
   // TODO: note cid might be a path in first place!
@@ -31,7 +28,6 @@ module.exports = class IPLDSelector {
         .forEach(key => {
           list.push(join(path, key))
         })
-
 
       const exploreCallbacks = keys
         .filter(key => {
@@ -61,12 +57,8 @@ module.exports = class IPLDSelector {
     this.treeAll(cid, '', (err, list) => {
       if (err) return callback(err)
 
-      const matches = minimatch.match(
-        list,
-        selector,
-        {matchBase: true}
-      )
-
+      const options = {matchBase: true}
+      const matches = minimatch.match(list, selector, options)
       callback(null, matches)
     })
   }

@@ -6,7 +6,6 @@ const dagCBOR = require('ipld-dag-cbor')
 const resolver = new IPLDResolver()
 const selector = new IPLDSelector(resolver)
 
-
 // David
 const david = {
   name: 'David'
@@ -39,8 +38,8 @@ series([
   (cb) => {
     nicola = {
       friends: [
-        {'/' : davidCID.toBaseEncodedString()},
-        {'/' : jeremyCID.toBaseEncodedString()}
+        {'/': davidCID.toBaseEncodedString()},
+        {'/': jeremyCID.toBaseEncodedString()}
       ]
     }
     dagCBOR.util.cid(nicola, (err, cid) => {
@@ -69,7 +68,6 @@ series([
 ], () => {
   console.log('added everything')
 
-
   selector.which('glob', nicolaCID, '**/*', (err, results) => {
     console.log('globbing:', results)
   })
@@ -77,5 +75,4 @@ series([
   selector.which('regex', nicolaCID, '.*/*', (err, results) => {
     console.log('regex:', results)
   })
-
 })
