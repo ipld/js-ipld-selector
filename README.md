@@ -16,7 +16,7 @@ Which returns which subsets of the graphs have been matched.
 
 ```
 Qml1..
-{ name: "Jeremy", nick: "whyrusleeping"}
+{ name: "Jeromy", nick: "whyrusleeping"}
 
 Qml2
 { name: "Juan", nick: "jdag"}
