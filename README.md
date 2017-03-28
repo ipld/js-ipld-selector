@@ -1,5 +1,7 @@
 # IPLD Selectors
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ipld/js-ipld-selector.svg)](https://greenkeeper.io/)
+
 **Warning**: this is a prototype far from being ready!
 
 ## Usage
