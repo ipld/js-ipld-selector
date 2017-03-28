@@ -10,8 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "ipld-resolver": "^0.6.0",
-    "ipld-dag-cbor": "^0.9.0"
+    "ipld-resolver": "^0.11.0",
+    "ipld-dag-cbor": "^0.11.0"
   },
   "dependencies": {
     "async": "^2.1.4",
