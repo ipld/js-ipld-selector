@@ -1,6 +1,6 @@
 # IPLD Selectors
 
-**Warning**: this is a prototype far from being ready!
+**This project is no longer under active development and has been archived. See https://ipld.io for information on the current state of IPLD selectors.***
 
 ## Usage
 
